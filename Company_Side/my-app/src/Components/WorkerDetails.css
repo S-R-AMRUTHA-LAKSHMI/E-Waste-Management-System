@@ -1,0 +1,73 @@
+/* Worker Details Container */
+.worker-details {
+    width: 80%;
+    margin: 20px auto;
+    padding: 30px;
+    background: linear-gradient(to bottom right, #e6f9f6, #ffffff);
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 1s ease-in-out;
+    overflow: hidden;
+}
+
+/* Worker Details Header */
+.worker-details h2 {
+    font-size: 2.4rem;
+    color: #00796b;
+    margin-bottom: 20px;
+    text-align: center;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    animation: fadeIn 1s ease-in-out;
+}
+
+/* Worker Details Paragraphs */
+.worker-details p {
+    font-size: 1.1rem;
+    color: #154c46;
+    line-height: 1.8;
+    margin-bottom: 15px;
+    animation: fadeIn 1.2s ease-in-out;
+}
+
+/* Styling for Labels */
+.worker-details strong {
+    color: #333;
+    font-weight: bold;
+}
+
+/* Worker Details Button */
+.worker-details button {
+    background: #00897b;
+    color: #ffffff;
+    font-size: 1rem;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-weight: bold;
+    transition: background 0.3s ease-in-out, transform 0.2s ease-in-out;
+}
+
+.worker-details button:hover {
+    background: #005f56;
+    transform: scale(1.05);
+}
+
+.worker-details button:active {
+    transform: scale(0.95);
+}
+
+/* Animation for fade-in effect */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

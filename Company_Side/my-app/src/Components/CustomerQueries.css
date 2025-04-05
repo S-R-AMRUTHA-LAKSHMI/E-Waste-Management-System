@@ -1,0 +1,54 @@
+/* Query Container */
+.query-container {
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  h2 {
+    font-size: 2rem;
+    color: #00796b;
+    margin-bottom: 20px;
+  }
+  
+  /* Search Input */
+  .search-input {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    border-radius: 8px;
+    border: 2px solid #00796b;
+    margin-bottom: 20px;
+  }
+  
+  /* Query List */
+  .query-list {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  /* Query Card */
+  .query-card {
+    background-color: #f9f9f9;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .query-card:hover {
+    transform: scale(1.02);
+  }
+  
+  .query-card h3 {
+    margin: 0;
+    color: #00796b;
+  }
+  
+  .query-card p {
+    margin: 5px 0;
+    color: #333;
+  }
+  

@@ -1,0 +1,227 @@
+/* General Home Section Styling */
+.home {
+  display: block; /* Keeps the home-left and home-right side by side */
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 60px 30px;
+  gap: 30px;
+  background: linear-gradient(to bottom right, #e6f9f6, #ffffff);
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  animation: fadeIn 1s ease-in-out;
+  overflow: hidden;
+}
+
+.left-right {
+  display: flex;
+}
+
+/* Left Section */
+.home-left {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+/* Right Section */
+.home-right {
+  flex: 1.5;
+  max-width: 600px;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.8);
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(10px);
+}
+
+/* Image Styling */
+.home-img {
+  max-width: 500px;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+  width: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+  filter: brightness(95%);
+}
+
+.home-img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 25px rgba(0, 0, 0, 0.2);
+  filter: brightness(100%);
+}
+
+/* Caption Below Image */
+.image-container {
+  text-align: center;
+  position: relative;
+}
+
+.image-caption {
+  font-size: 1.2rem;
+  color: #00897b;
+  font-weight: 600;
+  margin-top: 10px;
+  animation: fadeIn 1s ease-in-out;
+}
+
+.home-right h3 {
+  font-size: 1.8rem;
+  color: #00796b;
+  margin-bottom: 10px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  animation: fadeIn 0.8s ease forwards;
+}
+
+.home-right h2 {
+  font-size: 2.4rem;
+  font-weight: bold;
+  color: #004d40;
+  margin-bottom: 20px;
+  animation: fadeIn 1s ease forwards;
+}
+
+.home-right p {
+  font-size: 1.1rem;
+  color: #154c46;
+  line-height: 1.8;
+  margin-bottom: 15px;
+  animation: fadeIn 1.2s ease forwards;
+}
+
+/* Call-to-Action Button */
+.home-btn {
+  background: #00897b;
+  color: #ffffff;
+  font-size: 1rem;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-weight: bold;
+  transition: background 0.3s ease-in-out, transform 0.2s ease-in-out;
+}
+
+.home-btn:hover {
+  background: #005f56;
+  transform: scale(1.05);
+}
+
+.home-btn:active {
+  transform: scale(0.95);
+}
+
+/* Keyframes for Animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .home {
+    padding: 40px 20px;
+  }
+
+  .home-left, .home-right {
+    flex: 1 1 100%;
+  }
+
+  .home-left {
+    margin-bottom: 20px;
+  }
+
+  .home-img {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .home-left {
+    text-align: center;
+  }
+
+  .home-right h3, .home-right h2 {
+    text-align: center;
+  }
+
+  .home-right {
+    padding: 15px;
+  }
+
+  .home-btn {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+ 
+/* Store Section (aligned below .home section) */
+.store-section {
+  margin-top: 50px; /* Ensures space between .home and .store-section */
+  padding: 40px;
+  background: #e0f2f1;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.store-section h2 {
+  font-size: 2rem;
+  color: #00796b;
+  margin-bottom: 10px;
+}
+
+.store-section p {
+  font-size: 1.2rem;
+  color: #154c46;
+  margin-bottom: 20px;
+}
+
+/* Form Styling */
+.store-section form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+}
+
+.store-section input {
+  width: 80%;
+  max-width: 400px;
+  padding: 10px;
+  border: 2px solid #00796b;
+  border-radius: 6px;
+  font-size: 1rem;
+}
+
+.store-section button {
+  background: #00796b;
+  display: block;
+  color: white;
+  font-size: 1rem;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.store-section button:hover {
+  background: #004d40;
+}

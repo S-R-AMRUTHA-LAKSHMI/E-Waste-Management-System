@@ -1,0 +1,104 @@
+/* JoinForm.css */
+
+.join-form-container {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 30px;
+    background: linear-gradient(135deg, #e0f7fa, #80deea);
+    border-radius: 20px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  .join-form-container h1 {
+    font-size: 2.5rem;
+    color: #00796b;
+    margin-bottom: 10px;
+    animation: fadeInDown 1s ease-in-out;
+  }
+  
+  .join-form-container p {
+    font-size: 1.1rem;
+    color: #004d40;
+    margin-bottom: 20px;
+  }
+  
+  .join-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .join-form input,
+  .join-form textarea {
+    width: 100%;
+    padding: 15px;
+    border: 2px solid #004d40;
+    border-radius: 10px;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+    background: #ffffff;
+    color: #004d40;
+  }
+  
+  .join-form input:focus,
+  .join-form textarea:focus {
+    outline: none;
+    border-color: #00796b;
+    box-shadow: 0 0 10px rgba(0, 121, 107, 0.5);
+    background: #e0f2f1;
+  }
+  
+  .join-form textarea {
+    resize: none;
+    height: 120px;
+  }
+  
+  .submit-btn {
+    padding: 15px 30px;
+    background: #00796b;
+    color: #ffffff;
+    border: none;
+    border-radius: 10px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.3s ease;
+  }
+  
+  .submit-btn:hover {
+    background: #004d40;
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(0, 77, 64, 0.5);
+  }
+  
+  @keyframes fadeInDown {
+    from {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  @media (max-width: 600px) {
+    .join-form-container {
+      padding: 20px;
+    }
+  
+    .join-form-container h1 {
+      font-size: 2rem;
+    }
+  
+    .join-form-container p {
+      font-size: 1rem;
+    }
+  
+    .submit-btn {
+      font-size: 1rem;
+      padding: 12px 20px;
+    }
+  }
+  

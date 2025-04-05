@@ -1,0 +1,81 @@
+/* Reset and Global Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Arial", sans-serif;
+}
+
+body {
+  background-color: #f0fdf4; /* Soft eco-friendly green */
+  color: #2e7d32; /* Deep green text */
+  font-size: 16px;
+}
+
+/* Navbar Styling */
+.navbar {
+  background-color: #1b5e20; /* Dark green */
+  padding: 15px 25px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.navbar .logo {
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.1rem;
+  margin: 0 20px;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.navbar a:hover {
+  color: #c8e6c9; /* Soft green hover effect */
+}
+
+.navbar .links {
+  display: flex;
+}
+
+.navbar .links a:first-child {
+  margin-left: 0;
+}
+
+/* Active link styling */
+.navbar .active {
+  color: #c8e6c9;
+  font-weight: 700;
+}
+
+/* Layout Container */
+.layoutContainer {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* Page Container */
+.pageContainer {
+  flex: 1;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+/* Footer Styling */
+.footer {
+  background-color: #1b5e20;
+  color: white;
+  text-align: center;
+  padding: 15px;
+  font-size: 0.9rem;
+}
