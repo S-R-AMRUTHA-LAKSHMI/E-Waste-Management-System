@@ -131,17 +131,3 @@ We welcome all contributions! Feel free to fork, raise issues, or open pull requ
 
 ---
 
-## 📄 License
-
-MIT License – see the `LICENSE` file for details.
-
----
-
-## 📬 Contact
-
-- **Author:** S R Amrutha Lakshmi  
-- 📧 Email: [Insert your email]  
-- 🌐 GitHub: [@S-R-AMRUTHA-LAKSHMI](https://github.com/S-R-AMRUTHA-LAKSHMI)
-
----
-
